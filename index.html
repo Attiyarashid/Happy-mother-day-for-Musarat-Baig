@@ -1,101 +1,170 @@
 <!DOCTYPE html>
-<html lang="ur" dir="rtl">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Happy Mother Day, Pyaari Ami "Musarat Baig" 💐</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Mother’s Day Musarat Baig</title>
 
 <style>
-    body {
-        font-family: 'Noto Nastaliq Urdu', serif;
-        background: linear-gradient(to right, #ffe6f0, #fff5e6);
-        margin: 0;
-        padding: 0;
-        text-align: right;
-    }
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #ffe6f0, #fff);
+}
 
-    .container {
-        max-width: 900px;
-        margin: auto;
-        padding: 30px;
-        background: white;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        border-radius: 20px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    }
+/* Floating flowers */
+.flower {
+  position: fixed;
+  top: -50px;
+  font-size: 24px;
+  animation: fall linear infinite;
+  opacity: 0.7;
+}
 
-    h1 {
-        text-align: center;
-        color: #e91e63;
-        font-size: 32px;
-    }
+@keyframes fall {
+  0% { transform: translateY(-10vh) rotate(0deg); }
+  100% { transform: translateY(110vh) rotate(360deg); }
+}
 
-    p {
-        font-size: 20px;
-        line-height: 2.2;
-        color: #333;
-        margin-bottom: 20px;
-    }
+/* Center card */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
 
-    .heart {
-        text-align: center;
-        font-size: 40px;
-    }
+.card {
+  max-width: 900px;
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+  text-align: center;
+  animation: pop 1s ease;
+}
 
-    .footer {
-        text-align: center;
-        margin-top: 30px;
-        font-size: 18px;
-        color: #555;
-    }
+@keyframes pop {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
 
-    .highlight {
-        color: #d81b60;
-        font-weight: bold;
-    }
+h1 {
+  font-size: 40px;
+  color: #e91e63;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.9;
+  color: #333;
+}
+
+.heart {
+  font-size: 45px;
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  background: #e91e63;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Confetti */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: red;
+  top: 0;
+  animation: confetti 3s linear infinite;
+}
+
+@keyframes confetti {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100vh) rotate(360deg); }
+}
 </style>
 </head>
 
 <body>
 
+<!-- 🎵 Music (replace link if needed) -->
+<audio autoplay loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8b6c5c8b2.mp3?filename=soft-piano-ambient-110397.mp3" type="audio/mp3">
+</audio>
+
+<!-- 🌸 Floating flowers script -->
+<script>
+for(let i=0;i<20;i++){
+  let f = document.createElement("div");
+  f.className = "flower";
+  f.innerHTML = "🌸";
+  f.style.left = Math.random()*100 + "vw";
+  f.style.animationDuration = (3+Math.random()*5) + "s";
+  document.body.appendChild(f);
+}
+</script>
+
+<!-- 🎉 Confetti -->
+<script>
+for(let i=0;i<40;i++){
+  let c = document.createElement("div");
+  c.className = "confetti";
+  c.style.left = Math.random()*100 + "vw";
+  c.style.background = ["#ff4d6d","#ffb3c1","#ffd166","#06d6a0","#4cc9f0"][Math.floor(Math.random()*5)];
+  c.style.animationDuration = (2+Math.random()*3) + "s";
+  document.body.appendChild(c);
+}
+</script>
+
 <div class="container">
+  <div class="card">
 
-<h1>💐 Happy Mother Day "Musarat Baig" پیاری امی جان 💐</h1>
+    <h1>🌸 Happy Mother’s Day 🌸</h1>
+    <h2 style="color:#555;">For Musarat Baig 💖</h2>
 
-<p>
-السلام علیکم میری پیاری امی جان،
-آج مدرز ڈے کے اس خوبصورت موقع پر میں دل کی گہرائیوں سے آپ کو یہ بتانا چاہتی ہوں کہ آپ میری زندگی کی سب سے قیمتی نعمت ہیں۔ آپ کی محبت، دعائیں اور قربانیاں میری زندگی کا سب سے خوبصورت سہارا ہیں۔ جب بھی میں مشکل میں ہوتی ہوں، آپ کی آواز اور آپ کی دعائیں مجھے ہمت دیتی ہیں۔ اللہ تعالیٰ نے مجھے دنیا کی سب سے پیاری ماں عطا کی ہے، اور وہ آپ ہیں۔ 🌸
-</p>
+    <p>
+      میری پیاری امی جان، آپ میری زندگی کی سب سے خوبصورت حقیقت ہیں۔  
+      آپ کی محبت میرے دل کی روشنی ہے، جو ہر اندھیرے کو ختم کر دیتی ہے۔
+    </p>
 
-<p>
-امی جان،
-آپ نے ہمیشہ اپنی خوشیوں سے پہلے ہماری خوشیوں کو رکھا۔ راتوں کی نیند قربان کر کے، ہر دکھ اپنے دل میں چھپا کر، آپ نے ہمیں صرف محبت دی۔ آپ کا نرم لہجہ، آپ کی مسکراہٹ اور آپ کی شفقت میرے دل کو سکون دیتی ہے۔ میں چاہتی ہوں کہ آپ ہمیشہ خوش رہیں کیونکہ آپ کی خوشی ہی میری سب سے بڑی خوشی ہے۔ 💕
-</p>
+    <p>
+      امی جان، آپ کی دعائیں میری طاقت ہیں، آپ کی مسکراہٹ میری دنیا ہے۔  
+      میں چاہتی ہوں اللہ آپ کو ہمیشہ صحت، خوشی اور لمبی عمر عطا کرے۔
+    </p>
 
-<p>
-میری پیاری امی،
-آپ صرف میری ماں نہیں بلکہ میری بہترین دوست، میری طاقت اور میری دنیا ہیں۔ جب سب ساتھ چھوڑ دیتے ہیں تب بھی ماں کی محبت کبھی کم نہیں ہوتی۔ آپ نے مجھے جینا سکھایا، اچھا انسان بننا سکھایا اور ہر حال میں اللہ پر بھروسہ کرنا سکھایا۔ میں جتنا بھی آپ کا شکریہ ادا کروں وہ کم ہے۔ 🌷
-</p>
+    <p>
+      آپ نے اپنی پوری زندگی ہمیں سنوارنے میں لگا دی،  
+      اور میں وعدہ کرتی ہوں کہ میں آپ کو ہمیشہ فخر محسوس کرواؤں گی۔
+    </p>
 
-<p>
-امی جان،
-میں دعا کرتی ہوں کہ اللہ تعالیٰ آپ کی زندگی کو ہمیشہ خوشیوں، صحت اور سکون سے بھر دے۔ آپ کی ہر دعا قبول ہو، آپ کی ہر پریشانی دور ہو، اور آپ ہمیشہ مسکراتی رہیں۔ آپ کی موجودگی ہمارے گھر کی رونق اور ہمارے دلوں کی روشنی ہے۔ ✨
-</p>
+    <div class="heart">❤️ 🌸 ❤️</div>
 
-<p>
-میری دنیا کی سب سے خوبصورت ماں،
-اگر پوری دنیا کی محبت ایک طرف ہو اور ماں کی محبت ایک طرف، تو ماں کی محبت ہمیشہ جیت جائے گی۔ آپ جیسی ماں ہر کسی کو نہیں ملتی۔ میں خود کو دنیا کا سب سے خوش نصیب انسان سمجھتی ہوں کیونکہ میرے پاس آپ جیسی پیاری امی ہیں۔ ❤️
-</p>
+    <p>
+      اگر دنیا کی تمام خوشیاں ایک طرف اور آپ کی مسکراہٹ ایک طرف ہو،  
+      تو میں ہمیشہ آپ کی مسکراہٹ کو چنوں گی، کیونکہ آپ ہی میری دنیا ہیں۔
+    </p>
 
-<div class="heart">❤️ 💐 ❤️</div>
+    <button onclick="alert('I Love You Ammi 💖')">Click for Surprise</button>
 
-<p class="footer">
-ہیپی مدرز ڈے میری پیاری امی!<br>
-اللہ آپ کو ہمیشہ سلامت رکھے، لمبی عمر دے اور آپ کی زندگی کو خوشیوں سے بھر دے۔<br><br>
-<span class="highlight">بہت سارا پیار اور دعائیں 💕</span><br>
-عطیہ راشد 🌸
-</p>
+    <p style="margin-top:20px; color:#e91e63; font-weight:bold;">
+      بیٹی کی طرف سے بے پناہ پیار اور دعائیں 💕
+    </p>
 
+  </div>
 </div>
 
 </body>
